@@ -1,0 +1,395 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+.menu{
+    margin: 0;
+    background-color: whitesmoke;
+     background-image: radial-gradient(
+        circle,
+        rgb(255, 255, 255),
+        rgb(70, 69, 69)
+    
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    margin: 15px;
+    display: inline;
+    font-size: 17px;   
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgb(141, 139, 139);  
+}
+
+nav ul li:hover {
+    background-color: whitesmoke;
+}
+
+
+/* desde este punto para arriba se copia todo el menu de navegacion */
+
+
+
+header{
+    grid-area: header;   
+}
+
+#cuerpo{
+    background-color: rgb(0, 0, 0);
+}
+
+#cuerpo__descrip{
+    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: grid;
+    padding: 20px;
+    grid-template-areas: 
+    "text1 text1 ."
+    ". titu ."
+    ". text2 text2";
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+}
+
+#cuerpo__descrip__text1{
+    grid-area: text1;
+}
+
+#cuerpo__descrip__titu{
+    grid-area: titu;
+    align-self: center;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#cuerpo__descrip__text2{
+    grid-area: text2;
+}
+
+#section__blanca{
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://www.vascongada.com/wp-content/uploads/2020/04/transport-4916922_1280.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section__blanca__card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(172, 169, 169, 0.5); /* el rgba le da la propiedad de transparentar el cuadro*/
+    border-radius: 5%;
+    text-align: center;
+
+}
+
+#section__blanca__card h2{
+    font-size: 2rem;
+}
+
+.responsive__img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+   
+    #cuerpo__descrip{
+        background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: rgb(255, 255, 255);
+
+        display: grid;
+        padding: 20px;
+
+        grid-template-areas: 
+        "text1 text1"
+        "titu titu"
+        "text2 text2";
+
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, 2fr);
+    }
+
+.menu li{
+        margin: 5px;
+        display: inline;
+        font-size: 17px;
+    }
+
+.menu{
+        margin: 0;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    
+    } 
+
+footer{
+        font-size: 30px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    height: 20px;
+    color: red;
+}
+
+
+/*   ESTILOS DE COMO TRABAJAMOS      */
+
+.bienvenidos{
+    color: rgb(18, 53, 15);
+    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bienvenido__titulo{
+    font-size: 38px;
+    color: rgb(18, 53, 15);
+}
+.bienvenido__imagen{
+    width: 700px;
+    max-width: 900px;
+    
+}
+
+.bienvenido__description{
+    
+    max-width: 500px;
+    padding: 0px;
+    background-color: whitesmoke;
+
+}
+
+.galeria{
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    justify-content: center;
+
+
+}
+.galeria__image{
+    width: 300px;
+    max-width: 1100px;
+    
+    
+}
+
+.galeria__image:hover{
+    opacity: 50%;
+}
+
+/*   ESTILOS DE FORMULARIOS BAJAN DEL 99-90  */
+
+#cuerpo__descrip98{
+    background-image: radial-gradient(
+        circle,
+        rgb(255, 255, 255),
+        rgb(0, 0, 0)
+    
+    );
+    color: rgb(0, 0, 0);
+    display: grid;
+    padding: 100px;
+
+}
+
+#text__contac97{
+    text-align: center;
+    font-size: 25px;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+}
+#cuerpo__descrip__text396{
+    text-align: center;
+    background-image: url(https://negociosyempresa.com/wp-content/uploads/2022/05/solucion-logistica-para-tu-empresa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+
+}
+
+.shake__lento{
+    margin: auto;
+    border-radius: 30%;
+}
+.shake__lento:hover{
+    animation: agitar 1.0s;
+    animation-iteration-count: infinite;
+}
+
+.shake__lento2{
+    margin: auto;
+    border-radius: 20%;
+}
+.shake__lento2:hover{
+    animation: agitar 2.2s;
+    animation-iteration-count: infinite;
+}
+
+.shake__lento3{
+    margin: auto;
+    border-radius: 80%;
+}
+.shake__lento3:hover{
+    animation: agitar 3.0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes agitar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+/*   ESTILOS DE OFICINA CENTRAL BAJAN DEL 89-80  */
+
+.container{
+    background-color: whitesmoke;
+}
+
+/*   ESTILOS DE SOBRE NOSOTROS BAJAN DEL 79-70  */
+
+#cuerpo79{
+    background-color: rgb(0, 0, 0);
+}
+
+#cuerpo__descrip78{
+    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: grid;
+    padding: 30px;
+    grid-template-areas: 
+    ". . ."
+    "text1 titu text2"
+    ". text3 ."
+    ;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+}
+
+
+
+
+
+#cuerpo__descrip__text3{
+    grid-area: text3;
+    text-align: center; /* esta propiedad centra el contenido en el medio del cuadro en forma horizontal*/
+    align-self: center; /* esta propiedad centra el contenido en el medio del cuadro en forma vertical*/
+}
+
+#cuerpo__descrip__text177{
+    grid-area: text1;
+}
+
+#cuerpo__descrip__titu76{
+    grid-area: titu;
+    align-self: center;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#cuerpo__descrip__text275{
+    grid-area: text2;
+}
+
+
+@media (max-width: 768px) {
+
+
+    #cuerpo__descrip78{
+        
+        display: grid;
+        padding: 20px;
+
+        grid-template-areas: 
+        " titu titu "
+        " text1 text1 "
+        " text2 text2 "
+        " text3 text3 "
+        ;
+
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(4, 2fr);
+    }
+}
+
+/*   ESTILOS DE VEHICULOS BAJAN DEL 69-60  */
+
+
+.container{
+    background-color: whitesmoke;
+}
