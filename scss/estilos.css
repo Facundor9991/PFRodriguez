@@ -35,11 +35,10 @@ header {
   grid-area: header;
 }
 
-#cuerpo {
+.cuerpo {
   background-color: rgb(0, 0, 0);
 }
-
-#cuerpo__descrip {
+.cuerpo .cuerpo__descrip {
   background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -50,23 +49,20 @@ header {
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(3, 2fr);
 }
-
-#cuerpo__descrip__text1 {
+.cuerpo .cuerpo__descrip__text1 {
   grid-area: text1;
 }
-
-#cuerpo__descrip__titu {
+.cuerpo .cuerpo__descrip__titu {
   grid-area: titu;
   align-self: center;
   font-weight: 800;
   font-size: 40px;
 }
-
-#cuerpo__descrip__text2 {
+.cuerpo .cuerpo__descrip__text2 {
   grid-area: text2;
 }
 
-#section__blanca {
+.section__blanca {
   margin: auto;
   max-width: 700px;
   display: flex;
@@ -77,8 +73,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-#section__blanca__card {
+.section__blanca .section__blanca__card {
   width: 300px;
   display: flex;
   flex-direction: column;
@@ -87,42 +82,15 @@ header {
   border-radius: 5%;
   text-align: center;
 }
-
-#section__blanca__card h2 {
+.section__blanca .section__blanca__card h2 {
   font-size: 2rem;
 }
-
-.responsive__img {
+.section__blanca .responsive__img {
   height: auto;
   width: 100%;
   max-width: 300px;
 }
 
-@media (max-width: 768px) {
-  #cuerpo__descrip {
-    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: rgb(255, 255, 255);
-    display: grid;
-    padding: 20px;
-    grid-template-areas: "text1 text1" "titu titu" "text2 text2";
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 2fr);
-  }
-  .menu li {
-    margin: 5px;
-    display: inline;
-    font-size: 17px;
-  }
-  .menu {
-    margin: 0;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 footer {
   text-align: center;
   position: fixed;
@@ -176,20 +144,20 @@ footer {
 }
 
 /*   ESTILOS DE FORMULARIOS BAJAN DEL 99-90  */
-#cuerpo__descrip98 {
+.cuerpo__descrip98 {
   background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
   color: rgb(0, 0, 0);
   display: grid;
   padding: 100px;
 }
 
-#text__contac97 {
+.text__contac97 {
   text-align: center;
   font-size: 25px;
   font-family: "Arial Narrow", Arial, sans-serif;
 }
 
-#cuerpo__descrip__text396 {
+.cuerpo__descrip__text396 {
   text-align: center;
   background-image: url(https://negociosyempresa.com/wp-content/uploads/2022/05/solucion-logistica-para-tu-empresa.jpg);
   background-repeat: no-repeat;
@@ -306,6 +274,7 @@ footer {
 /*   ESTILOS DE OFICINA CENTRAL BAJAN DEL 89-80  */
 .container {
   background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
+  justify-content: center;
 }
 
 .row {
@@ -313,7 +282,7 @@ footer {
   justify-content: center;
 }
 
-/* APLICANDO SASS Y CONDICIONALES 2 CON CARTA EN LA PAGINA PRINCIPAL */
+/* APLICANDO SASS Y CONDICIONALES 2 CON CARTA EN LA PAGINA OFICINAS */
 p {
   font-size: 20px;
 }
@@ -334,11 +303,10 @@ p {
 }
 
 /*   ESTILOS DE SOBRE NOSOTROS BAJAN DEL 79-70  */
-#cuerpo79 {
+.cuerpo79 {
   background-color: rgb(0, 0, 0);
 }
-
-#cuerpo__descrip78 {
+.cuerpo79 .cuerpo__descrip78 {
   background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -349,38 +317,50 @@ p {
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(3, 2fr);
 }
-
-#cuerpo__descrip__text3 {
+.cuerpo79 .cuerpo__descrip__text177 {
+  grid-area: text1;
+}
+.cuerpo79 .cuerpo__descrip__text3 {
   grid-area: text3;
   text-align: center; /* esta propiedad centra el contenido en el medio del cuadro en forma horizontal*/
   align-self: center; /* esta propiedad centra el contenido en el medio del cuadro en forma vertical*/
 }
-
-#cuerpo__descrip__text177 {
-  grid-area: text1;
-}
-
-#cuerpo__descrip__titu76 {
+.cuerpo79 .cuerpo__descrip__titu76 {
   grid-area: titu;
   align-self: center;
   font-weight: 800;
   font-size: 40px;
 }
-
-#cuerpo__descrip__text275 {
+.cuerpo79 .cuerpo__descrip__text275 {
   grid-area: text2;
 }
 
 @media (max-width: 768px) {
-  #cuerpo__descrip78 {
+  .cuerpo__descrip {
     display: grid;
     padding: 20px;
     grid-template-areas: " titu titu " " text1 text1 " " text2 text2 " " text3 text3 ";
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(4, 2fr);
   }
+  /* MEDIA DE INDEX*/
+  .cuerpo__descrip {
+    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    display: grid;
+    padding: 20px;
+    grid-template-areas: "text1 text1" "titu titu" "text2 text2";
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+  }
+  .menu {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-/*   ESTILOS DE VEHICULOS BAJAN DEL 69-60  */
-.container {
-  background-color: whitesmoke;
-}/*# sourceMappingURL=estilos.css.map */
+/*   ESTILOS DE VEHICULOS BAJAN DEL 69-60  *//*# sourceMappingURL=estilos.css.map */
