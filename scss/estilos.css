@@ -30,7 +30,7 @@ nav ul li:hover {
   background-color: whitesmoke;
 }
 
-/* desde este punto para arriba se copia todo el menu de navegacion */
+/* MENU DE NAVEGACION EN GENERAL */
 header {
   grid-area: header;
 }
@@ -122,13 +122,6 @@ header {
     justify-content: center;
     align-items: center;
   }
-  footer {
-    font-size: 30px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
 }
 footer {
   text-align: center;
@@ -137,34 +130,33 @@ footer {
   bottom: 0;
   padding: 10px;
   height: 20px;
-  color: red;
+  color: blueviolet;
 }
 
 /*   ESTILOS DE COMO TRABAJAMOS      */
 .bienvenidos {
-  color: rgb(18, 53, 15);
-  background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
-  background-repeat: no-repeat;
-  background-position: center;
+  color: rgb(23, 24, 23);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
 }
-
-.bienvenido__titulo {
-  font-size: 38px;
-  color: rgb(18, 53, 15);
-}
-
-.bienvenido__imagen {
-  width: 700px;
-  max-width: 900px;
-}
-
-.bienvenido__description {
+.bienvenidos .bienvenido__description {
   max-width: 500px;
   padding: 0px;
-  background-color: whitesmoke;
+  background-color: rgb(87, 85, 85);
+  justify-content: center;
+  text-align: center;
+  border-radius: 26px;
+}
+.bienvenidos .bienvenido__description .bienvenido__titulo {
+  font-size: 28px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+.bienvenidos .bienvenido__description .bien__titu__01 {
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .galeria {
@@ -174,8 +166,7 @@ footer {
   overflow: auto;
   justify-content: center;
 }
-
-.galeria__image {
+.galeria .galeria__image {
   width: 300px;
   max-width: 1100px;
 }
@@ -314,12 +305,32 @@ footer {
 }
 /*   ESTILOS DE OFICINA CENTRAL BAJAN DEL 89-80  */
 .container {
-  background-color: whitesmoke;
+  background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(0, 0, 0));
 }
 
 .row {
   align-items: center;
   justify-content: center;
+}
+
+/* APLICANDO SASS Y CONDICIONALES 2 CON CARTA EN LA PAGINA PRINCIPAL */
+p {
+  font-size: 20px;
+}
+
+.cards1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card_1 {
+  width: 840px;
+  height: 300px;
+  background-color: whitesmoke;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
 /*   ESTILOS DE SOBRE NOSOTROS BAJAN DEL 79-70  */

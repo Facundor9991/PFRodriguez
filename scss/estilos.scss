@@ -36,7 +36,7 @@ nav ul li:hover {
 }
 
 
-/* desde este punto para arriba se copia todo el menu de navegacion */
+/* MENU DE NAVEGACION EN GENERAL */
 
 
 
@@ -147,13 +147,7 @@ header{
     
     } 
 
-footer{
-        font-size: 30px;
-        text-align: center;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-    }
+    
 }
 
 
@@ -165,39 +159,46 @@ footer{
     bottom: 0;
     padding: 10px;
     height: 20px;
-    color: red;
+    color: blueviolet;
 }
 
 
 /*   ESTILOS DE COMO TRABAJAMOS      */
 
 .bienvenidos{
-    color: rgb(18, 53, 15);
-    background-image: url(http://127.0.0.1:5500/imagenes/android-chrome-512x512.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    color: rgb(23, 24, 23);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.bienvenido__titulo{
-    font-size: 38px;
-    color: rgb(18, 53, 15);
-}
-.bienvenido__imagen{
-    width: 700px;
-    max-width: 900px;
+    background-image: radial-gradient(
+        circle,
+        rgb(255, 255, 255),
+        rgb(0, 0, 0)
     
-}
+    );
 
-.bienvenido__description{
+    .bienvenido__description{
     
-    max-width: 500px;
-    padding: 0px;
-    background-color: whitesmoke;
-
+        max-width: 500px;
+        padding: 0px;
+        background-color: rgb(87, 85, 85);
+        justify-content: center;
+        text-align: center;
+        border-radius: 26px;
+    
+        .bienvenido__titulo{
+            font-size: 28px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+    
+        }
+        .bien__titu__01{
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
 }
+
 
 .galeria{
     background-color: rgb(252, 252, 252);
@@ -206,18 +207,20 @@ footer{
     overflow: auto;
     justify-content: center;
 
+    .galeria__image{
+        width: 300px;
+        max-width: 1100px;
+       
+        
+        
+    }
 
-}
-.galeria__image{
-    width: 300px;
-    max-width: 1100px;
-    
-    
 }
 
 .galeria__image:hover{
     opacity: 50%;
 }
+
 
 /*   ESTILOS DE FORMULARIOS BAJAN DEL 99-90  */
 
@@ -316,13 +319,46 @@ footer{
 /*   ESTILOS DE OFICINA CENTRAL BAJAN DEL 89-80  */
 
 .container{
-    background-color: whitesmoke;
+    background-image: radial-gradient(
+        circle,
+        rgb(255, 255, 255),
+        rgb(0, 0, 0)
+    
+    );
 }
 
 .row {
     align-items: center;
     justify-content: center;
   }
+
+    /* APLICANDO SASS Y CONDICIONALES 2 CON CARTA EN LA PAGINA PRINCIPAL */
+
+    $ancho: 720px;
+    $step: 20px;
+  
+    p{
+      font-size: $step;
+    }
+  
+  .cards1{
+      display: flex;
+      flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  }
+    .card_1{
+      width: $step * 42;
+      height: $step * 15;
+      background-color: whitesmoke;
+      margin: $step;
+      border-radius: $step;
+      text-align: center;
+      
+    }
+  
+  
 
 /*   ESTILOS DE SOBRE NOSOTROS BAJAN DEL 79-70  */
 
