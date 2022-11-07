@@ -132,11 +132,10 @@ footer{
     .bienvenido__description{
     
         max-width: 500px;
-        padding: 0px;
-        background-color: rgb(87, 85, 85);
+        padding: 20px;
         justify-content: center;
         text-align: center;
-        border-radius: 26px;
+
     
         .bienvenido__titulo{
             font-size: 28px;
@@ -158,6 +157,8 @@ footer{
     flex-wrap: nowrap;
     overflow: auto;
     justify-content: center;
+    margin: 20px;
+    border-radius: 40px;
 
     .galeria__image{
         width: 300px;
@@ -274,12 +275,42 @@ footer{
     
     );
     justify-content: center;
+    flex-direction:column;
 }
 
 .row {
+    
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-  }
+    /* margin: 34px; */
+}
+card_1 {
+    width: 813px;
+    height: 270px;
+    background-color: whitesmoke;
+    margin: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2.25rem;
+    margin: 20px
+}
+
+    .card-img-top{
+        border-radius: 75px;
+        margin: 10px;
+
+    }
 
     /* APLICANDO SASS Y CONDICIONALES 2 CON CARTA EN LA PAGINA OFICINAS */
 
@@ -298,7 +329,7 @@ footer{
   
   }
     .card_1{
-      width: $step * 42;
+      width: $step * 22;
       height: $step * 15;
       background-color: whitesmoke;
       margin: $step;
@@ -306,7 +337,8 @@ footer{
       text-align: center;
       
     }
-  
+
+    
   
 
 /*   ESTILOS DE SOBRE NOSOTROS BAJAN DEL 79-70  */
@@ -348,23 +380,29 @@ footer{
 }
 
 
+/*EMPIEZAN MEDIAS*/
+
+
 
 @media (max-width: 768px) {
 
-    .cuerpo__descrip{
+
+
+
+/*MEDIA DE SOBRE NOSOTROS*/
+    .cuerpo__descrip78{
         
         display: grid;
         padding: 20px;
 
         grid-template-areas: 
-        " titu titu "
-        " text1 text1 "
-        " text2 text2 "
-        " text3 text3 "
+        "text177 text177"
+        "titu76 titu76"
+        "text275 text275"
         ;
 
         grid-template-columns: repeat(2, 2fr);
-        grid-template-rows: repeat(4, 2fr);
+        grid-template-rows: repeat(3, 2fr);
     }
 
     /* MEDIA DE INDEX*/
@@ -395,8 +433,46 @@ footer{
     align-items: center;
     flex-direction: column;
   }
-    
+  
+  
+/* MEDIA DE VEHICULOS */
+
+.card69{
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    flex-direction: row;
+    margin: 17px;
 }
+
+}
+
+
 /*   ESTILOS DE VEHICULOS BAJAN DEL 69-60  */
 
 
+
+.card69 {
+    display: flex;
+    background-color: #0d6efd61;
+    border: 18px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    flex-direction: column-reverse;
+
+}
+
+/* CONTENEDORES DE "CATEGORIAS" */
+.cuadroimagen{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+}
